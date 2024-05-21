@@ -50,10 +50,9 @@ do{
     string banderaO = Console.ReadLine();
     if(int.TryParse(banderaO, out bandera))
     {
-        if(bandera != 0 && bandera != 1)
+        if(bandera == 0 )
         {
-            Console.Write("Porfavor ingrese una opcion valida");
-            bandera = 1;
+            break;
         }
     }
 }
