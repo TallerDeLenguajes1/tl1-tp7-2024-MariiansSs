@@ -4,20 +4,12 @@ public class Empleado
 {
     private string nombre;
     private string apellido;
-    private DateTime fecNac;
+    private DateTime fecNac = DateTime.Now;
     private char estadoCivil;
     private double sueldo;
 
     private cargos cargo;
-    private enum cargos
-    {
-        Auxiliar,
-        Administrativo,
-        Ingeniero,
-        Especialista,
-        Investigador
-    }
-
+   
     public string Nombre
     {
         get
@@ -42,4 +34,22 @@ public class Empleado
         }
     }
 
+    public char Estadocivil
+    {
+        get
+        {
+            return estadoCivil;    
+        }
+    }
+
 }
+
+ public enum cargos
+    {
+        Auxiliar,
+        Administrativo,
+        Ingeniero,
+        Especialista,
+        Investigador
+    }
+
